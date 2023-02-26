@@ -7,40 +7,25 @@ using namespace std;
 class Solution {
   public:
     void printTriangle(int n) {
-        // code here
-        for(int i=n;i>=1;i--)
-        {
-            for(int j=i;j>=1;j--)
-            {
-                cout<<"*";
-            }
-            for(int k=2*(n-i); k>=1;k--)
-            {
-                cout<<" ";
-            }
-            for(int m=i;m>=1;m--)
-            {
-                cout<<"*";
-            }       
-        cout<<endl;
-        }
+        // code here  
+       
         for(int i=1;i<=n;i++)
         {
             for(int j=1;j<=i;j++)
             {
-                cout<<"*";
+                cout<<j<<" ";
             }
             for(int k=1; k<=2*(n-i);k++)
             {
-                cout<<" ";
+                cout<<" "<<" ";
             }
             for(int m=i;m>=1;m--)
             {
-                cout<<"*";
+                cout<<m<<" ";
             }       
         cout<<endl;
     }
-    }
+}
 };
 
 //{ Driver Code Starts.
